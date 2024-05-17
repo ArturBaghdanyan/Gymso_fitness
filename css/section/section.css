@@ -1,8 +1,154 @@
-section .section_title {
+section {
+  padding: 7rem 0;
+}
+section .section_row {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+section .section_row .section_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 3rem !important;
+  line-height: normal;
+}
+section .section_row .section_title > h6 {
+  font-weight: 100;
+  color: #909090;
+  font-size: 22px;
+}
+section .section_row .section_title > h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+section .section_row .section_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+section .section_row .section_container .section_column {
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+section .section_row .section_container .section_column .section_column_piece {
+  width: 100%;
+  height: auto;
+}
+section .section_row .section_container .section_column .section_column_piece > .image {
+  max-width: 100%;
+  height: 250px;
+}
+section .section_row .section_container .section_column .section_column_piece > .image img {
+  max-width: 100%;
+  height: 100%;
+}
+section .section_row .section_container .section_column .section_column_piece .section_footer {
+  background-color: #ffffff;
+  -webkit-box-shadow: 6px 0 38px rgba(20, 20, 20, 0.1);
+          box-shadow: 6px 0 38px rgba(20, 20, 20, 0.1);
+  border-radius: 0 0 2px 2px;
+  padding: 1rem 2rem;
+}
+section .section_row .section_container .section_column .section_column_piece .section_footer .section_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section .section_row .section_container .section_column .section_column_piece .section_footer .section_info > div {
+  line-height: 1.5;
+}
+section .section_row .section_container .section_column .section_column_piece .section_footer .section_info > div h3 {
+  font-size: 28px;
+}
+section .section_row .section_container .section_column .section_column_piece .section_footer .section_info > div span b {
+  color: #909090;
+  font-weight: bold;
+}
+section .section_row .section_container .section_column .section_column_piece .section_footer .section_info .section_price {
+  background: #f13a11;
+  border-radius: 50%;
+  display: block;
+  color: white;
+  width: 56px;
+  height: 56px;
+  line-height: 3.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+section .section_row .section_container .section_column .section_column_piece .section_footer > p {
+  margin-top: 1rem;
+  line-height: 1.5em;
+  color: #666262;
+  font-weight: 300;
+  font-size: 18px;
+}
+@media only screen and (max-width: 768px) {
+  section .section_row .section_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    row-gap: 40px;
+  }
+  section .section_row .section_container .section_column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  section .section_row .section_container .section_column .section_column_piece {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+  section .section_row .section_container .section_column .section_column_piece .image img {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  section .section_row .section_container .section_column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  section .section_row .section_column:last-child {
+    margin-top: 30px;
+  }
 }
