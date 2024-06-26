@@ -1,7 +1,7 @@
-@import '../css/header/header.scss';
-@import '../css/section/section.scss';
-@import '../css/table/table.scss';
-@import '../css/contact/contact.scss';
+@import './assets/css/header/header.scss';
+@import './assets/css/section/section.scss';
+@import './assets/css/table/table.scss';
+@import './assets/css/contact/contact.scss';
 
 * {
   margin: 0;
@@ -12,30 +12,29 @@
 
 .container {
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  padding: 0 5rem 0 5rem;
+}
 
-  .size {
+
+
+@media only screen and (min-width: 380px) and (max-width: 768px) {
+  .container {
+    padding: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .container {
+    padding: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
     padding: 0 60px 0 60px;
   }
+}
 
-  @media only screen and (min-width: 380px) and (max-width: 768px) {
-    .size {
-      padding: 0 10% 0 10%;
-    }
-  }
-
-  @media only screen and (min-width: 993px) and (max-width: 1199px) {
-    .size {
-      padding: 0 10% 0 10%;
-    }
-  }
-
-  @media only screen and (min-width: 1200px) {
-    .size {
-      padding: 0 60px 0 60px;
-    }
-  }
 
   .hero {
     background-image: url('../assets/header_background.jpg');
@@ -141,7 +140,7 @@
       display: flex;
       margin: auto;
       opacity: 1;
-      padding: 50px 60px 50px 60px;
+      padding: 50px 0;
 
       & .feature_column {
         width: 100%;
@@ -197,9 +196,9 @@
           }
         }
       }
-      .border {
-        border: 1px solid gray;
-      }
+      // .border {
+      //   border: 1px solid gray;
+      // }
     }
 
     @media only screen and (max-width: 770px) {
@@ -404,7 +403,7 @@
       color: rgb(42, 42, 42);
       padding-bottom: 20px;
 
-      .footer_container {
+      .footer_row {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -416,6 +415,7 @@
           .footer_column_piece {
             display: flex;
             align-items: center;
+            column-gap: 12px;
             > img {
               width: 18px;
               height: 18px;
@@ -426,6 +426,4 @@
       }
 
     }
-}
-
 

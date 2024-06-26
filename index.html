@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gymso Fitness</title>
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./style.css" />
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
-<div class="container">
 
 <header>
-  <div class="header size">
+  <div class="header container">
     <div class="header_name">
       <span>Gymso Fitness</span>
     </div>
@@ -29,10 +28,10 @@
         <i class='bx bx-x'></i>
       </span>
       <a href="#">home</a>
-      <a href="#">about us</a>
-      <a href="#">classes</a>
-      <a href="#">schedules</a>
-      <a href="#">contact</a>
+      <a href="#about">about us</a>
+      <a href="#classes">classes</a>
+      <a href="#schedules">schedules</a>
+      <a href="#contact">contact</a>
     </div>
     <div class="header_icon">
       <a href="#">
@@ -51,8 +50,8 @@
   </div>
 </header>
 
-<article class="columns hero">
-  <div class="hero_text size">
+<article class="columns hero" id="about">
+  <div class="hero_text">
     <h6 class="animate">new way to build a healthy lifestyle!</h6>
     <h1 class="animate">UPGRADE YOUR BODY AT GYMSO FITNESS</h1>
     <div class="hero_feature animate">
@@ -63,15 +62,14 @@
 </article>
 
 
-<article class="feature columns">
-  <div class="feature_container size">
+<article class="feature container">
+  <div class="feature_container">
     <div class="feature_column">
       <h2>New to the gymso?</h2>
       <span>Your membership is up to 2 months FREE ($62.50 per month)</span>
       <p>Gymso is free HTML template by Tooplate for your commercial website. Bootstrap v4.2.1 Layout. Feel free to use it.</p>
       <button>become a member today</button>
     </div>
-    <div class="border"></div>
     <div class="feature_column">
       <h2>Working hours</h2>
       <span>Sunday : closed</span>
@@ -87,7 +85,7 @@
   </div>
 </article>
 
-<div class="wrapper size columns">
+<div class="wrapper columns container">
   <div class="wrapper_text">
     <h2 class="animate">Hello, we are Gymso</h2>
     <p class="animate">
@@ -105,7 +103,7 @@
   <div class="wrapper_container">
 
   <div class="wrapper_outer">
-    <img src="assets/wrapper/yoga_1.jpg" alt="yoga1">
+    <img src="./assets/images/wrapper/yoga_1.jpg" alt="yoga1">
     <div class="wrapper_outer_name">
       <div class="wrapper_outer_footer">
         <h3>Mary Yan</h3>
@@ -118,7 +116,7 @@
     </div>
   </div>
   <div class="wrapper_outer">
-    <img src="assets/wrapper/yoga_2.jpg" alt="yoga2">
+    <img src="./assets/images/wrapper/yoga_2.jpg" alt="yoga2">
     <div class="wrapper_outer_name">
       <div class="wrapper_outer_footer">
         <h3>Catherina</h3>
@@ -138,7 +136,7 @@
 
 </div>
 
-<section>
+<section class="container" id="classes">
   <div class="section_row">
 
     <div class="section_title">
@@ -146,12 +144,12 @@
       <h2>Our Training Classes</h2>
     </div>
 
-  <div class="section_container size">
+  <div class="section_container">
 
     <div class="section_column">
       <div class="section_column_piece">
         <div class="image">
-          <img src="assets/section/yoga.jpg" alt="yoga">
+          <img src="./assets/images/section/yoga.jpg" alt="yoga">
         </div>
         <div class="section_footer">
           <div class="section_info">
@@ -169,7 +167,7 @@
     <div class="section_column">
       <div class="section_column_piece">
         <div class="image">
-          <img src="assets/section/areobic.jpg" alt="areobic">
+          <img src="./assets/images/section/areobic.jpg" alt="areobic">
         </div>
         <div class="section_footer">
           <div class="section_info">
@@ -187,7 +185,7 @@
     <div class="section_column">
       <div class="section_column_piece">
         <div class="image">
-          <img src="assets/section/cardio.jpg" alt="cardio">
+          <img src="./assets/images/section/cardio.jpg" alt="cardio">
         </div>
         <div class="section_footer">
           <div class="section_info">
@@ -206,9 +204,9 @@
   </div>
 </section>
 
-<div style="background-color: #171819">
+<div style="background-color: #171819" class="container" id="schedules">
 
-  <div class="table size">
+  <div class="table">
 
     <div class="table_title">
       <span>our weekly GYM schedules</span>
@@ -309,9 +307,9 @@
 </div>
 </div>
 
- <section class="size">
+ <section class="container">
 
-   <div class="contact">
+   <div class="contact" id="contact">
      <div class="contact-piece">
        <h2>Feel free to ask anything</h2>
        <form action="#">
@@ -335,22 +333,21 @@
 
  <span class="border"></span>
 
-<footer class="footer size">
-  <div class="footer_container">
+<footer class="footer container">
+  <div class="footer_row">
     <div>Copyright © 2020 Gymso Fitness Co.</div>
     <div class="footer_column">
       <div class="footer_column_piece">
-        <img src="./assets/footer/email.svg" alt="email">
+        <img src="./assets/images/footer/email.svg" alt="email">
         <span>hello@company.com</span>
       </div>
       <div class="footer_column_piece">
-        <img src="./assets/footer/telephone.svg" alt="telephone">
+        <img src="./assets/images/footer/telephone.svg" alt="telephone">
         <span>010-020-0840</span>
       </div>
     </div>
   </div>
 </footer>
-</div>
 
 <script src="index.js"></script>
 </body>

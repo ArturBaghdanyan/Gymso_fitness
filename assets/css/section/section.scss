@@ -1,10 +1,8 @@
-section {
-  padding: 7rem 0;
-
-  .section_row {
+.section_row {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    padding: 7rem 0;
 
   .section_title {
     display: flex;
@@ -131,5 +129,4 @@ section {
       margin-top: 30px;
     }
   }
-}
 }
